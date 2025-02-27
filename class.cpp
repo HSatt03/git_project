@@ -16,5 +16,6 @@ int main()
     cout << "Enter yuor age!" << "\n";
     cin >> P.age;
     cout << "You are " << P.age << "years old!" << endl;
+    cout << "Hello";
     return 0;
 }
