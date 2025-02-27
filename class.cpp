@@ -59,5 +59,6 @@ int main()
     cin >> Stu.id;
     cout << "your lastname is " << Stu.LastName << " and your id is " << Stu.id << endl;
     cin >> color;
+    cout << "Hiii";
     return 0;
 }
