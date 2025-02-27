@@ -14,10 +14,34 @@ public:
     int id;
     string LastName;
 };
+enum Color
+{
+    RED,
+    YELLOW,
+    BLUE,
+};
+istream& operator>>(istream& is, Color& color)
+{
+    switch(color)
+    {
+        case RED:
+            color  = RED;
+            break;
+        case BLUE:
+            color = YELLOW;
+            break;
+        case YELLOW:
+            color = YELLOW;
+            break;
+        default:
+            cout << "Unknown!";
+    }
+}
 int main()
 {
     Person P;
     Student Stu;
+    Color color;
     cout << "Enter your name!" << endl;
     getline(cin, P.name);
     cout << "Hello " << P.name << "!" << endl;
@@ -34,5 +58,6 @@ int main()
     cout << "Your id: " << endl;
     cin >> Stu.id;
     cout << "your lastname is " << Stu.LastName << " and your id is " << Stu.id << endl;
+    cin >> color;
     return 0;
 }
